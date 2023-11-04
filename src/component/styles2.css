@@ -1,0 +1,166 @@
+.teams {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Light', sans-serif;
+  text-align: center;
+
+
+}
+
+.teams div {
+  width: 325px;
+  height: 90px;
+  position: relative;
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  font-weight: bold;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  display: inline-block;
+  margin: 25px 15px;
+
+}
+
+.teamalba {
+  background-color: #FFD100;
+}
+
+.teamanadoluefes {
+  background-color: #002D74;
+}
+
+.teammonaco {
+  background-color: #E2211C;
+}
+
+.teambaskonia {
+  background-color: #0A2240;
+}
+
+.teamkizilyildiz {
+  background-color: #E91D26;
+}
+
+.teammilano {
+  background-color: #E1261D;
+}
+
+.teambarcelona {
+  background-color: #023485;
+}
+
+.teambayern {
+  background-color: #E11837;
+}
+
+.teamfenerbahce {
+  background-color: #FFED00;
+}
+
+.teamasvel {
+  background-color: #929292;
+}
+
+.teammaccabi {
+  background-color: #FFF100;
+}
+
+.teamoly {
+  background-color: #D1061F;
+}
+
+.teampana {
+  background-color: #007135;
+}
+
+.teampartizan {
+  background-color: #1D1D1B;
+}
+
+.teamreal {
+  background-color: #004996;
+}
+
+.teamvalencia {
+  background-color: #FF6C0E;
+}
+
+.teambologna {
+  background-color: #696969;
+}
+
+.teamzalgiris {
+  background-color: #0C6F3E;
+}
+
+
+.home {
+  margin: 20px;
+  padding: 20px;
+  height: 800px;
+  text-align: start;
+  background-image: url("https://media-cdn.incrowdsports.com/1401d1c9-3968-4f86-b280-ddb63ee1ccd8.jpg?crop=3000%3A1688%3Anowe%3A0%3A0&width=1920&resizeType=fill&format=webp");
+  color: yellow;
+}
+
+.games {
+  
+  box-sizing: border-box;
+  font-family: 'Roboto Light', sans-serif;
+  text-align: center;
+  position: relative;
+  margin: 25px 15px;
+  font-weight: bold;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.games h5 {
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.matchs1 {
+  width: 1000px;
+  height: 670px;
+  margin: 24px auto;
+  padding: 40px;
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.matchs1 div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.matchs2 {
+  width: 1000px;
+  height: 335px;
+  margin: 24px auto;
+  padding: 40px;
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  text-align: center;
+  font-weight: bold;
+}
+
+.matchs2 div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add {
+  display: flex;
+  justify-content: space-around;
+}

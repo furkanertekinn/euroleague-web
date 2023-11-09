@@ -22,7 +22,7 @@ const Body = () => {
         <Route path="/players" element={<Players />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/add" element={<Add />} />
-        <Route path="update/:id" element={<Update />} />
+        <Route path="/update/:id" element={<Update />} />
       </Routes>
     </BrowserRouter>
   )

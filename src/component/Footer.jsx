@@ -1,6 +1,4 @@
 import React from 'react';
-// import logo from '../image/siyah.jpg';
-
 
 const Footer = () => {
     return (

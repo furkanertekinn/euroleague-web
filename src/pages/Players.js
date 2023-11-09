@@ -24,7 +24,7 @@ const Players = () => {
     }, [])
 
     const updatePlayers = (id) => {
-         navigate('/update/' + id);
+        navigate('/update/' + id);
     }
 
     const deletePlayers = (id) => {

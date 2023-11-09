@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react"
+import { React, useState } from "react"
 import {
     Button,
     InputGroup
@@ -9,50 +9,39 @@ const Update = () => {
 
     const { id } = useParams();
 
-    const [values, setValues] = useState({
-        id: id,
-        Name: '',
-        Age: '',
-        Height: '',
-        Team: '',
-        Nationality: '',
-        PhotoUrl: ''
-    });
+    const [upName, setName] = useState("")
+    const [upAge, setAge] = useState("")
+    const [upHeight, setHeight] = useState("")
+    const [upTeam, setTeam] = useState("")
+    const [upNationality, setNationality] = useState("")
+    const [upPhotoUrl, setPhotoUrl] = useState("")
 
-    const updatePlayers = Id => {
+    const updatePlayers = () => {
+        const Name = upName;
+        const Age = upAge;
+        const Height = upHeight;
+        const Team = upTeam;
+        const Nationality = upNationality;
+        const PhotoUrl = upPhotoUrl;
 
-        fetch(`https://euroleague-backend.onrender.com/updateplayer/${id}`, {
-            method: "PUT",
-            body: JSON.stringify({
-
-            }),
-            headers: {
-                "Content-type": "application/json; charset=UTF-8",
-            },
-        })
-            .then(response => response.json())
-
+        if (Name && Age && Height && Team && Nationality) {
+            fetch(`https://euroleague-backend.onrender.com/updateplayer/${id}`, {
+                method: "PUT",
+                body: JSON.stringify({
+                    "player_name": Name,
+                    "player_age": Age,
+                    "player_height": Height,
+                    "player_team": Team,
+                    "player_nationality": Nationality,
+                    "player_photo_url": PhotoUrl
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8",
+                },
+            })
+                .then(response => response.json())
+        }
     }
-
-    // const [values, setValues] = useState({
-    //     id: id,
-    //     Name: '',
-    //     Age: '',
-    //     Height: '',
-    //     Team: '',
-    //     Nationality: '',
-    //     PhotoUrl: ''
-    // });
-
-
-
-    // const updatePlayers = () => {
-    //     fetch('https://euroleague-backend.onrender.com/updateplayer/' + id)
-    //         .then(res => {
-    //             setValues({ ...values, Name: res.data.Name, Age: res.data.Age, Height: res.data.Height, Team: res.data.Team, Nationality: res.data.Nationality, PhotoUrl: res.data.PhotoUrl })
-    //         })
-    //         .catch((data) => console.log(data))
-    // }
 
     return (
 
@@ -63,8 +52,8 @@ const Update = () => {
                     Name
                 </p>
                 <InputGroup className="inputgroup"
-                    value={values.Name}
-                    onChange={e => setValues({ ...values, Name: e.target.value })}
+                    value={upName}
+                    onChange={(e) => setName(e.target.value)}
                 />
             </div>
 
@@ -73,40 +62,40 @@ const Update = () => {
                     Age
                 </div>
                 <InputGroup className="inputgroup"
-                    value={values.Age}
-                    onChange={e => setValues({ ...values, Age: e.target.value })}
+                    value={upAge}
+                    onChange={(e) => setAge(e.target.value)}
                 />
             </div>
 
             <div className="add">
                 Height
                 <InputGroup className="inputgroup"
-                    value={values.Height}
-                    onChange={e => setValues({ ...values, Height: e.target.value })}
+                    value={upHeight}
+                    onChange={(e) => setHeight(e.target.value)}
                 />
             </div>
 
             <div className="add">
                 Team
                 <InputGroup className="inputgroup"
-                    value={values.Team}
-                    onChange={e => setValues({ ...values, Team: e.target.value })}
+                    value={upTeam}
+                    onChange={(e) => setTeam(e.target.value)}
                 />
             </div>
 
             <div className="add">
                 Nationality
                 <InputGroup className="inputgroup"
-                    value={values.Nationality}
-                    onChange={e => setValues({ ...values, Nationality: e.target.value })}
+                    value={upNationality}
+                    onChange={(e) => setNationality(e.target.value)}
                 />
             </div>
 
             <div className="add">
                 PhotoUrl
                 <InputGroup className="inputgroup"
-                    value={values.PhotoUrl}
-                    onChange={e => setValues({ ...values, PhotoUrl: e.target.value })}
+                    value={upPhotoUrl}
+                    onChange={(e) => setPhotoUrl(e.target.value)}
                 />
             </div>
 

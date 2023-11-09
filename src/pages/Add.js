@@ -22,6 +22,7 @@ const Add = () => {
         const Team = newTeam.trim()
         const Nationality = newNationality.trim()
         const PhotoUrl = newPhotoUrl.trim()
+        
         if (Name && Age && Height && Team && Nationality) {
             fetch(apiUrl, {
                 method: "POST",

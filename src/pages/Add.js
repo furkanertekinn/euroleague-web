@@ -22,8 +22,11 @@ const Add = () => {
         const Team = newTeam.trim()
         const Nationality = newNationality.trim()
         const PhotoUrl = newPhotoUrl.trim()
-        
-        if (Name && Age && Height && Team && Nationality) {
+
+        const message = "Oyuncuyu eklemek istediğinize emin misiniz ?";
+        const answer = window.confirm(message);
+
+        if (Name && Age && Height && Team && Nationality && answer) {
             fetch(apiUrl, {
                 method: "POST",
                 body: JSON.stringify({
@@ -39,6 +42,9 @@ const Add = () => {
                 },
             })
                 .then(response => response.json())
+
+            alert("Oyuncu ekleme işlemi başarılı bir şekilde gerçekleştirildi!")
+            document.location.reload(true);
         }
     }
 

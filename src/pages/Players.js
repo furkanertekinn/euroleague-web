@@ -37,6 +37,8 @@ const Players = () => {
                 method: "DELETE",
             })
                 .then(response => response.json())
+
+            alert("Silme işlemi başarılı bir şekilde gerçekleştirildi!")
             document.location.reload(true);
         }
     }

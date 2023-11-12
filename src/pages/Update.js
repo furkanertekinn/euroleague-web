@@ -24,7 +24,10 @@ const Update = () => {
         const Nationality = upNationality;
         const PhotoUrl = upPhotoUrl;
 
-        if (Name && Age && Height && Team && Nationality) {
+        const message = "Oyuncu profilini güncellemek istediğinize emin misiniz ?";
+        const answer = window.confirm(message);
+
+        if (Name && Age && Height && Team && Nationality && answer) {
             fetch(`https://euroleague-backend.onrender.com/updateplayer/${id}`, {
                 method: "PUT",
                 body: JSON.stringify({
@@ -40,7 +43,11 @@ const Update = () => {
                 },
             })
                 .then(response => response.json())
+
+            alert("Güncelleme işlemi başarılı bir şekilde gerçekleştirildi!")
+            document.location.reload(true);
         }
+
     }
 
     return (

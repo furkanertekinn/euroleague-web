@@ -1,9 +1,10 @@
-import { React, useState } from "react"
+import { React, useEffect, useState } from "react"
 import {
     Button,
     InputGroup
 } from "@blueprintjs/core"
 import { useParams } from "react-router-dom"
+import axios from "axios";
 
 const Update = () => {
 
@@ -15,6 +16,18 @@ const Update = () => {
     const [upTeam, setTeam] = useState("")
     const [upNationality, setNationality] = useState("")
     const [upPhotoUrl, setPhotoUrl] = useState("")
+
+    useEffect(() => {
+        axios.get(`https://euroleague-backend.onrender.com/getplayer/` + id)
+            .then(res => {
+                setName(res.data.Name);
+                setAge(res.data.Age);
+                setHeight(res.data.Height);
+                setTeam(res.data.Team);
+                setNationality(res.data.Nationality);
+                setPhotoUrl(res.data.PhotoUrl);
+            })
+    }, [])
 
     const updatePlayers = () => {
         const Name = upName;
@@ -46,8 +59,8 @@ const Update = () => {
 
             alert("Güncelleme işlemi başarılı bir şekilde gerçekleştirildi!")
             document.location.reload(true);
+            window.location.replace("/players");      
         }
-
     }
 
     return (

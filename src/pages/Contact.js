@@ -1,13 +1,19 @@
 import React from "react";
+import { Document, Page } from "react-pdf";
+import cv from "../cv/furkanertekincv.pdf"
 
 const Contact = () => {
     return (
-        <body className="font-bold">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-            <i class="fa fa-solid fa-envelope"> furkanertekin0@gmail.com</i>
-        </body>
+        <body>
+            <div>
+                <iframe title="CV" src={cv} width="100%" height="1000px"></iframe>
 
-    )
-}
+                {/* <Document file='../cv/furkanertekincv.pdf'>
+                    <Page pageNumber={1} width={window.innerWidth} />
+                </Document> */}
+            </div>
+        </body>
+    );
+};
 
 export default Contact

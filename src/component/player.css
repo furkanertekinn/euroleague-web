@@ -1,0 +1,25 @@
+.loading-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    font-weight: bolder;
+}
+
+.loading-bar {
+    border: 10px solid #EEEEEE;
+    border-top: 10px solid #ff604d;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* Tam dönme */
+    }
+  }

@@ -95,16 +95,6 @@
   background-color: #0C6F3E;
 }
 
-
-.home {
-  margin: 20px;
-  padding: 20px;
-  height: 800px;
-  text-align: start;
-  background-image: url("https://media-cdn.incrowdsports.com/1401d1c9-3968-4f86-b280-ddb63ee1ccd8.jpg?crop=3000%3A1688%3Anowe%3A0%3A0&width=1920&resizeType=fill&format=webp");
-  color: yellow;
-}
-
 .games {
   
   box-sizing: border-box;

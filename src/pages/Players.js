@@ -67,7 +67,7 @@ const Players = () => {
                                 </div>
                                 <div className='content'>
                                     <div className='top'>
-                                        <div>
+                                        <div className='buttons'>
                                             <Button className="buttonUpdate" intent='warning' onClick={() => updatePlayers(player.id)}>Update</Button>
                                             <Button className="buttonDelete" intent="danger" onClick={() => deletePlayers(player.id)}>Delete</Button>
                                         </div>

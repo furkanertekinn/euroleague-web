@@ -17,9 +17,39 @@
 
 @keyframes spin {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg); /* Tam dönme */
+        transform: rotate(360deg);
     }
-  }
+}
+
+.card .buttonUpdate {
+    float: right;
+    background-color: #F5F5F5;
+    border: none;
+    color: black;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: bold;
+    margin-right: 250px;
+    margin-bottom: 10px;
+}
+
+.card .buttonDelete {
+    float: right;
+    background-color: #F5F5F5;
+    border: none;
+    color: black;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 250px;
+}

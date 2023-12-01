@@ -118,29 +118,3 @@
      top: 0;
      z-index: 99;
  }
-
- .card .buttonUpdate {
-     float: right;
-     background-color: #F5F5F5;
-     border: none;
-     color: black;
-     padding: 5px 10px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 12px;
-     margin-right: 250px;
- }
-
- .card .buttonDelete {
-    float: right;
-    background-color: #F5F5F5;
-    border: none;
-    color: black;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin-right: 250px;
- }

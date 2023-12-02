@@ -1,6 +1,6 @@
 # Euroleague Information
 
-[Live demo link](euroleague-web.vercel.app)
+[Live demo link](https://euroleague-web.vercel.app)
 
 ## Özet:
 ### React kullanarak Euroleague takımlarını görebileceğimiz, fikstürdeki maçları takip edebileceğimiz ve oyuncu ekleme / silme / güncelleme yapıp ekranda listeleyebileceğimiz dinamik web servisler ile çalışan bir wep-app'dir.

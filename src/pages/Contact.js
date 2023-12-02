@@ -7,10 +7,6 @@ const Contact = () => {
         <body>
             <div>
                 <iframe title="CV" src={cv} width="100%" height="1000px"></iframe>
-
-                {/* <Document file='../cv/furkanertekincv.pdf'>
-                    <Page pageNumber={1} width={window.innerWidth} />
-                </Document> */}
             </div>
         </body>
     );

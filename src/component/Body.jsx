@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import './styles1.css';
 import './styles2.css';
@@ -18,6 +17,7 @@ const Body = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/games" element={<Games />} />
         <Route path="/home" element={<Home />} />

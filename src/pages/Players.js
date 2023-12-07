@@ -12,7 +12,6 @@ const Players = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-
         fetch(apiUrl)
             .then(res => res.json())
             .then(
@@ -60,7 +59,6 @@ const Players = () => {
                 <ul>
                     {data.map(player => (
                         <li key={player.id}>
-
                             <div className='card'>
                                 <div className="picture">
                                     <img src={player.PhotoUrl !== "" ? player.PhotoUrl : 'https://d1bvpoagx8hqbg.cloudfront.net/259/0f326ce8a41915e8b1d21ffaee087fae.jpg'} width='300' height='250' alt="" />

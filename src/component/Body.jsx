@@ -4,6 +4,7 @@ import './styles2.css';
 import './add.css';
 import './player.css';
 import './home.css';
+import './games.css';
 import Contact from '../pages/Contact';
 import Games from '../pages/Games';
 import Home from '../pages/Home';

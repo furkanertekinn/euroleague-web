@@ -1,0 +1,73 @@
+.games {
+  box-sizing: border-box;
+  font-family: 'Roboto Light', sans-serif;
+  text-align: center;
+  position: relative;
+  margin: 25px 15px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.matchs {
+  width: 1400px;
+  height: 100px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  text-align: center;
+  font-weight: bold;
+}
+
+.matchs div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.scor-home {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scor-away {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.matchs {
+  width: 70%;
+  height: 30%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.matchs:hover {
+  transform: scale(1.1);
+  background-color: #E0E0E0;
+}

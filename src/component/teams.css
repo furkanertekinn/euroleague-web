@@ -1,0 +1,100 @@
+.teams {
+  margin: 25px 25px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: 'Roboto Light', sans-serif;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.teams div {
+  width: 300px;
+  height: 105px;
+  position: relative;
+  border: 1px solid #ffff;
+  border-radius: 5px;
+  font-weight: bold;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #424242;
+  display: flex;
+  margin: 25px 25px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.teamalba {
+  background: linear-gradient(to right, #FFD100 10%, #F5F5F5 33.33% 100%);
+}
+
+.teamanadoluefes {
+  background-color: #002D74;
+  background: linear-gradient(to right, #002D74 10%, #F5F5F5 33.33% 100%);
+}
+
+.teammonaco {
+  background: linear-gradient(to right, #E2211C 10%, #F5F5F5 33.33% 100%);
+}
+
+.teambaskonia {
+  background: linear-gradient(to right, #0A2240 10%, #F5F5F5 33.33% 100%);
+}
+
+.teamkizilyildiz {
+  background: linear-gradient(to right, #E91D26 10%, #F5F5F5 33.33% 100%);
+}
+
+.teammilano {
+  background: linear-gradient(to right, #E1261D 10%, #F5F5F5 33.33% 100%);
+}
+
+.teambarcelona {
+  background: linear-gradient(to right, #023485 10%, #F5F5F5 30.33% 100%);
+}
+
+.teambayern {
+  background: linear-gradient(to right, #E11837 10%, #F5F5F5 33.33% 100%);
+}
+
+.teamfenerbahce {
+  background: linear-gradient(to right, #FFED00 10%, #F5F5F5 33.33% 100%);
+}
+
+.teamasvel {
+  background: linear-gradient(to right, #929292 10%, #F5F5F5 33.33% 100%);
+}
+
+.teammaccabi {
+  background: linear-gradient(to right, #FFF100 10%, #F5F5F5 33.33% 100%);
+}
+
+.teamoly {
+  background: linear-gradient(to right, #D1061F 10%, #F5F5F5 33.33% 100%);
+}
+
+.teampana {
+  background: linear-gradient(to right, #007135 10%, #F5F5F5 33.33% 100%);
+}
+
+.teampartizan {
+  background: linear-gradient(to right, #1D1D1B 10%, #F5F5F5 33.33% 100%);
+}
+
+.teamreal {
+  background: linear-gradient(to right, #004996 10%, #F5F5F5 33.33% 100%);
+}
+
+.teamvalencia {
+  background: linear-gradient(to right, #FF6C0E 10%, #F5F5F5 33.33% 100%);
+}
+
+.teambologna {
+  background: linear-gradient(to right, #696969 10%, #F5F5F5 33.33% 100%);
+}
+
+.teamzalgiris {
+  background: linear-gradient(to right, #0C6F3E 10%, #F5F5F5 33.33% 100%);
+}

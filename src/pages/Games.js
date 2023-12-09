@@ -33,14 +33,14 @@ const Games = () => {
                         {data.map(game => (
                             <div key={game.id} >
                                 <div className="matchs">
-                                    <div >
+                                    <div>
                                         <div className="date">
                                             {game.Date}
                                         </div>
-                                        <div>
+                                        <div className="HomeTeam">
                                             <div>{game.HomeTeam}</div>
                                         </div>
-                                        <img src={game.HomeLogo} alt="Home Logo" />
+                                        <img src={game.HomeLogo} alt="Home Logo" className="HomeLogo" />
                                         <li>
                                             <div className={game.HomePoint > game.AwayPoint ? "score win" : "score lose"}>{game.HomePoint}
                                             </div>
@@ -52,8 +52,8 @@ const Games = () => {
                                             <div className={game.AwayPoint > game.HomePoint ? "score win" : "score lose"}> {game.AwayPoint}
                                             </div>
                                         </li>
-                                        <img src={game.AwayLogo} alt="Away Logo" />
-                                        <div>
+                                        <img src={game.AwayLogo} alt="Away Logo" className="AwayLogo" />
+                                        <div className="AwayTeam">
                                             <div>{game.AwayTeam}</div>
                                         </div>
                                     </div>

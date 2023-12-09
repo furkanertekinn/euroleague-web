@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './styles1.css';
-import './styles2.css';
+import './teams.css';
 import './add.css';
 import './player.css';
 import './home.css';

@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import {
-    Button
+    Button,
+    FormGroup,
+    InputGroup
 } from "@blueprintjs/core"
 import { useNavigate } from 'react-router-dom';
-
 
 const Players = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState([]);
+    const [searchQuery, setSearchQuery] = useState('');
     const apiUrl = 'https://euroleague-backend.onrender.com/players';
     const navigate = useNavigate();
 
@@ -24,7 +26,6 @@ const Players = () => {
                     setIsLoading(false);
                 }
             )
-
     }, [])
 
     const updatePlayers = (id) => {
@@ -47,9 +48,27 @@ const Players = () => {
         }
     }
 
+    const handleSearchInputChange = (event) => {
+        setSearchQuery(event.target.value);
+    }
+
+    const filteredPlayers = data.filter(player =>
+        player.Name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
     return (
         <body className='f'>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+            <div>
+                <FormGroup className="search">
+                    <input
+                        className="search-button"
+                        placeholder="Search by name"
+                        value={searchQuery}
+                        onChange={handleSearchInputChange}
+                    />
+                </FormGroup>
+            </div>
             {isLoading ? (
                 <div className="loading-bar-container">
                     <div className="loading-name">Loading . .</div>
@@ -57,7 +76,7 @@ const Players = () => {
                 </div>
             ) : (
                 <ul>
-                    {data.map(player => (
+                    {filteredPlayers.map(player => (
                         <li key={player.id}>
                             <div className='card'>
                                 <div className="picture">

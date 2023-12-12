@@ -12,7 +12,7 @@
     border-radius: 100%;
     width: 55px;
     height: 55px;
-    animation: spin 1.5s linear infinite;
+    animation: spin 1.4s linear infinite;
 }
 
 @keyframes spin {
@@ -54,4 +54,17 @@
     font-weight: bold;
     margin-right: 250px;
     border-radius: 8px;
+}
+
+.search-button {
+    width: 300px;
+    display: inline-block;
+    margin: 25px;
+    margin-bottom: 0;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    color: black;
+    font-size: medium;
+    text-align: center;
 }

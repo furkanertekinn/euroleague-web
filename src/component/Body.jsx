@@ -5,13 +5,13 @@ import '../pages/add/add.css';
 import '../pages/players/players.css';
 import '../pages/home/home.css';
 import '../pages/games/games.css';
-import Contact from '../pages/contact/contact';
-import Games from '../pages/games/games';
-import Home from '../pages/home/home';
-import Players from '../pages/players/players';
-import Teams from '../pages/teams/teams';
+import Contact from '../pages/contact/contacts';
+import Games from '../pages/games/game';
+import Home from '../pages/home/homes';
+import Players from '../pages/players/player';
+import Teams from '../pages/teams/team';
 import Add from '../pages/add/add';
-import Update from '../pages/update/update'
+import Update from '../pages/update/updates'
 
 const Body = () => {
 

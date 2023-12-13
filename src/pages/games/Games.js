@@ -24,7 +24,6 @@ const Games = () => {
         <body className="games">
             {isLoading ? (
                 <div className="loading-bar-container">
-                    <div className="loading-name">Loading . .</div>
                     <div className="loading-bar"></div>
                 </div>
             ) : (

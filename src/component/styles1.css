@@ -1,120 +1,24 @@
- .f {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: 'Roboto Light', sans-serif;
-     text-align: center;
+.header a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: double;
+    font-size: 16px;
 
- }
+}
 
- .card {
-     width: 350px;
-     margin: 24px auto;
-     position: relative;
-     border: 1px solid #cbcbcb;
-     border-radius: 20px;
+.header a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: overline;
+}
 
- }
+.header a:active {
+    color: white;
+    font-weight: bold;
+}
 
- .f li {
-     display: inline-block;
-     margin: 10px 15px;
- }
-
- .top {
-     padding: 16px;
-     display: flex;
-     justify-content: end;
-     background-color: #F5F5F5;
-     border-radius: 20px 20px 0 0;
-     min-height: 150px;
- }
-
- .share-button-wrapper {
-     display: flex;
-     flex-direction: column;
-     row-gap: 8px;
- }
-
- .picture {
-     position: absolute;
-     width: 148px;
-     height: 148px;
-     border: 4px solid black;
-     border-radius: 50%;
-     left: 50%;
-     transform: translate(-50%, 20px);
- }
-
- .picture img {
-     height: 100%;
-     border-radius: 50%;
-     border: 4px solid white;
- }
-
- .share-button-wrapper i {
-     color: white;
-     cursor: pointer;
- }
-
- .bottom {
-     padding: 32px;
-     display: flex;
-     flex-direction: column;
-     row-gap: 12px;
-     align-items: center;
- }
-
- .title-wrapper {
-     text-align: center;
- }
-
- .name {
-     font-size: 14px;
-     font-weight: bold;
- }
-
- .age {
-     font-size: 14px;
- }
-
- .height {
-     font-size: 14px;
- }
-
-
- .action-button-wrapper {
-     display: flex;
-     column-gap: 16px;
- }
-
- .fff {
-     padding: 0;
-     text-align: center;
-     font-size: medium;
- }
-
- .header a {
-     color: black;
-     padding: 14px 16px;
-     text-decoration: double;
-     font-size: 16px;
-
- }
-
- .header a:hover {
-     color: white;
-     font-weight: bold;
-     text-decoration: overline;
- }
-
- .header a:active {
-     color: white;
-     font-weight: bold;
- }
-
- .header {
-     position: sticky;
-     top: 0;
-     z-index: 99;
- }
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}

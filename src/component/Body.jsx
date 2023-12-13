@@ -1,17 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './styles1.css';
-import './teams.css';
-import './add.css';
-import './player.css';
-import './home.css';
-import './games.css';
-import Contact from '../pages/Contact';
-import Games from '../pages/Games';
-import Home from '../pages/Home';
-import Players from '../pages/Players';
-import Teams from '../pages/Teams';
-import Add from '../pages/Add';
-import Update from '../pages/Update'
+import '../pages/teams/teams.css';
+import '../pages/add/add.css';
+import '../pages/players/player.css';
+import '../pages/home/home.css';
+import '../pages/games/games.css';
+import Contact from '../pages/contact/Contact';
+import Games from '../pages/games/Games';
+import Home from '../pages/home/Home';
+import Players from '../pages/players/Players';
+import Teams from '../pages/teams/Teams';
+import Add from '../pages/add/add';
+import Update from '../pages/update/Update'
 
 const Body = () => {
 

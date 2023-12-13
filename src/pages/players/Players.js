@@ -57,7 +57,7 @@ const Players = () => {
     );
 
     return (
-        <body className='f'>
+        <body className='players'>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div>
                 <FormGroup className="search">
@@ -71,7 +71,6 @@ const Players = () => {
             </div>
             {isLoading ? (
                 <div className="loading-bar-container">
-                    <div className="loading-name">Loading . .</div>
                     <div className="loading-bar"></div>
                 </div>
             ) : (

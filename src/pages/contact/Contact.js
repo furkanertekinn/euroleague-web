@@ -1,6 +1,6 @@
 import React from "react";
 import { Document, Page } from "react-pdf";
-import cv from "../cv/furkanertekincv.pdf"
+import cv from "../contact/cv/furkanertekincv.pdf"
 
 const Contact = () => {
     return (

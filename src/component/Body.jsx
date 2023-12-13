@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './styles1.css';
 import '../pages/teams/teams.css';
 import '../pages/add/add.css';
-import '../pages/players/player.css';
+import '../pages/players/players.css';
 import '../pages/home/home.css';
 import '../pages/games/games.css';
 import Contact from '../pages/contact/contact';

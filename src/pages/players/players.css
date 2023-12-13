@@ -152,3 +152,10 @@
     font-size: medium;
     text-align: center;
 }
+
+.message{
+    margin: 200px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}

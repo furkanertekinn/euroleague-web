@@ -153,9 +153,25 @@
     text-align: center;
 }
 
-.message{
-    margin: 200px;
+.message {
+    margin: 220px;
     font-size: 25px;
-    font-weight: bold;
     color: black;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: #F5F5F5;
+    border: 1px none white;
+    border-width: 20px;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -116,7 +116,7 @@ const Players = () => {
                         ))
                     ) : (
                         <div className="message">
-                            <p>Not Found</p>
+                            <p>Not Found !</p>
                         </div>
                     )}
                 </ul>
